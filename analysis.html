@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibility Analysis ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Analyzing Your Answers ❤️</h1>
+
+    <p id="status">
+        ███░░░░░░ 30%
+    </p>
+
+    <button class="yes-btn" id="continueBtn" onclick="nextPage()"
+            style="display:none;">
+        Continue 💖
+    </button>
+
+</div>
+
+<script>
+
+let status = document.getElementById("status");
+
+setTimeout(() => {
+    status.innerHTML = "██████░░░░ 60%";
+}, 1000);
+
+setTimeout(() => {
+    status.innerHTML = "██████████ 100%";
+}, 2000);
+
+setTimeout(() => {
+    status.innerHTML =
+    "❤️ Soulmate Detected ❤️<br><br>Compatibility Score : 100% 🥰";
+    
+    document.getElementById("continueBtn").style.display = "inline-block";
+}, 3000);
+
+function nextPage(){
+    window.location.href = "benefits.html";
+}
+
+</script>
+
+</body>
+</html>

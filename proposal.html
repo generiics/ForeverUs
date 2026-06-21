@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Question ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>One Last Question ❤️</h1>
+
+    <p>
+        Will You Be My Girlfriend? 🥺💕
+    </p>
+
+    <div class="buttons">
+        <button class="yes-btn" onclick="yesClicked()">
+            YES ❤️
+        </button>
+
+        <button class="no-btn" id="noBtn">
+            NO 😒
+        </button>
+    </div>
+
+</div>
+
+<script>
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+
+    let maxX = window.innerWidth - noBtn.offsetWidth - 20;
+    let maxY = window.innerHeight - noBtn.offsetHeight - 20;
+
+    let x = Math.random() * maxX;
+    let y = Math.random() * maxY;
+
+    noBtn.style.position = "absolute";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+});
+
+function yesClicked(){
+    window.location.href = "celebration.html";
+}
+
+</script>
+
+</body>
+</html>

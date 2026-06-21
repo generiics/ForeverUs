@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#FFE4EC,#FFD6E8,#FFF0F5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+}
+
+.container{
+    background:rgba(255,255,255,0.6);
+    padding:50px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(255,105,180,0.3);
+}
+
+h1{
+    font-family:'Great Vibes',cursive;
+    color:#E91E63;
+    font-size:4rem;
+}
+
+p{
+    margin-top:15px;
+    color:#8E2457;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+button{
+    border:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.yes-btn{
+    background:#FF1493;
+    color:white;
+    margin-right:20px;
+}
+
+.no-btn{
+    background:white;
+    color:#E91E63;
+    position:absolute;
+}
